@@ -1,0 +1,81 @@
+{
+  "app": {
+    "title": "Risk calculator",
+    "subtitle": "Position sizing by risk: stocks, crypto, forex"
+  },
+  "markets": {
+    "stocks": "US Market",
+    "crypto": "Crypto",
+    "forex": "Forex"
+  },
+  "fields": {
+    "entryPrice": "Entry price",
+    "stopLoss": "Stop loss",
+    "takeProfit": "Take profit",
+    "stopPercent": "Stop offset",
+    "atrMultiplier": "ATR multiplier"
+  },
+  "stopMode": {
+    "numbers": "Absolute",
+    "percent": "in %",
+    "atr": "ATR | {timeframe} | {multiplier}"
+  },
+  "direction": {
+    "long": "Long",
+    "short": "Short",
+    "buy": "Buy",
+    "sell": "Sell"
+  },
+  "results": {
+    "risk": "Risk",
+    "profit": "Profit",
+    "buyLabel": "Buy",
+    "cost": "Cost",
+    "margin": "Margin",
+    "leverage": "Leverage",
+    "leverageValue": "{value}x",
+    "leverageForex": "leverage 1:{ratio}",
+    "liquidation": "Liquidation price",
+    "shares": "{count, plural, one {# share} other {# shares}}",
+    "lots": "{count} lots",
+    "perPip": "{value}/ pip",
+    "empty": "—"
+  },
+  "actions": {
+    "activate": "Activate",
+    "activating": "Activating…",
+    "activated": "Trade activated",
+    "share": "Copy calculation link",
+    "copied": "Link copied"
+  },
+  "settings": {
+    "title": "Calculation settings",
+    "deposit": "Deposit, USDT",
+    "riskPerTrade": "Risk per trade, %",
+    "leverage": "Leverage",
+    "hint": "Position size depends on deposit and risk per trade."
+  },
+  "trades": {
+    "title": "Trade journal",
+    "status": {
+      "open": "Open",
+      "pending": "Pending",
+      "closed": "Closed",
+      "canceled": "Canceled"
+    },
+    "empty": "No trades in this status"
+  },
+  "priceChange": "{value} %",
+  "errors": {
+    "required": "Fill in the field",
+    "positive": "Enter a number greater than zero",
+    "stopEqualsEntry": "Stop can't equal the entry price",
+    "stopAboveEntryLong": "For a long, stop must be below entry",
+    "stopBelowEntryShort": "For a short, stop must be above entry"
+  },
+  "lang": {
+    "ru": "RU",
+    "en": "EN",
+    "switch": "Language"
+  }
+}

@@ -1,0 +1,208 @@
+@use "theme/tokens" as t;
+
+.panel {
+  width: 100%;
+  max-width: t.$panel-width;
+  background: t.$surface;
+  border: 1px solid t.$border;
+  border-radius: t.$radius-panel;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  box-shadow: 0 4px 18px rgba(20, 30, 40, 0.04);
+}
+
+.tabs {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.tab {
+  appearance: none;
+  border: 0;
+  cursor: pointer;
+  padding: 7px 14px;
+  border-radius: 999px;
+  font: inherit;
+  font-size: 13px;
+  font-weight: 600;
+  color: #5b6470;
+  background: #f1f3f5;
+  transition: background-color 0.15s ease, color 0.15s ease;
+
+  &:hover:not(.tabActive) {
+    background: #e7eaee;
+  }
+  &:active {
+    transform: scale(0.97);
+  }
+  &:focus-visible {
+    outline: 2px solid rgba(t.$green, 0.5);
+    outline-offset: 1px;
+  }
+}
+
+.tabActive {
+  background: #cdeee4;
+  color: t.$green-dark;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: 700;
+  color: t.$title;
+  margin: 0;
+  flex: 1;
+}
+
+.priceChange {
+  font-size: 13px;
+  font-weight: 600;
+  color: t.$green;
+
+  &.negative {
+    color: t.$amber;
+  }
+}
+
+.gear {
+  color: t.$muted;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.labelRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  min-height: 28px;
+}
+
+.label {
+  font-size: 14px;
+  font-weight: 600;
+  color: t.$ink;
+}
+
+.controlsRow {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.percentInput {
+  flex: 1;
+  max-width: 150px;
+}
+
+.tpRow {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+
+  .tpField {
+    flex: 1;
+  }
+  .tpRatio {
+    flex-shrink: 0;
+  }
+}
+
+.results {
+  border-top: 1px solid t.$border;
+  padding-top: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.statRow {
+  display: flex;
+  align-items: stretch;
+  gap: 16px;
+
+  > div {
+    flex: 1;
+    min-width: 0;
+  }
+}
+
+.vDivider {
+  flex: 0 0 1px;
+  align-self: stretch;
+  background: t.$border;
+}
+
+.leverageRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 8px;
+}
+
+.leverageLabel {
+  font-size: 13px;
+  color: t.$muted;
+}
+
+.leverageValue {
+  font-size: 14px;
+  font-weight: 500;
+  color: t.$muted;
+}
+
+.notice {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  background: t.$notice-bg;
+  border: 1px solid #f0dcb4;
+  border-radius: 12px;
+  padding: 12px 14px;
+}
+
+.noticeLabel {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: #8a6d3b;
+}
+
+.noticeValue {
+  font-size: 15px;
+  font-weight: 600;
+  color: #8a6d3b;
+  white-space: nowrap;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.activate {
+  flex: 1;
+}
+
+.skeletonStack {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}

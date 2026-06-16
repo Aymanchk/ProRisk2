@@ -1,0 +1,51 @@
+@use "theme/tokens" as t;
+
+.group {
+  display: inline-flex;
+  gap: 4px;
+  background: #f1f3f5;
+  border-radius: 10px;
+  padding: 3px;
+}
+
+.option {
+  appearance: none;
+  border: 0;
+  cursor: pointer;
+  min-width: 56px;
+  padding: 7px 14px;
+  border-radius: 8px;
+  font: inherit;
+  font-size: 14px;
+  font-weight: 600;
+  color: #6b7280;
+  background: transparent;
+  transition: background-color 0.15s ease, color 0.15s ease;
+
+  &:hover:not(.active) {
+    color: t.$ink;
+  }
+
+  &:active {
+    transform: scale(0.97);
+  }
+
+  &:focus-visible {
+    outline: 2px solid rgba(t.$green, 0.5);
+    outline-offset: 1px;
+  }
+}
+
+.active {
+  color: #fff;
+
+  &.positive {
+    background: t.$green;
+  }
+  &.negative {
+    background: t.$red;
+  }
+  &.neutral {
+    background: #6b7280;
+  }
+}

@@ -1,0 +1,40 @@
+@use "theme/tokens" as t;
+
+.pair {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 0;
+}
+
+.alignEnd {
+  align-items: flex-end;
+  text-align: right;
+}
+
+.label {
+  font-size: 14px;
+  color: t.$muted;
+  line-height: 1.2;
+}
+
+.value {
+  font-size: 16px;
+  font-weight: 600;
+  color: t.$ink;
+  line-height: 1.2;
+  // Long numbers wrap instead of being clipped, so values are never hidden.
+  overflow-wrap: anywhere;
+  max-width: 100%;
+}
+
+.risk {
+  color: t.$red;
+}
+.profit {
+  color: t.$green;
+}
+.muted {
+  color: t.$muted;
+  font-weight: 500;
+}

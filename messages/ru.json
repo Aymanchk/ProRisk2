@@ -1,0 +1,81 @@
+{
+  "app": {
+    "title": "Калькулятор риска",
+    "subtitle": "Расчёт позиции по риску: акции, крипта, форекс"
+  },
+  "markets": {
+    "stocks": "Рынок США",
+    "crypto": "Криптовалюта",
+    "forex": "Форекс"
+  },
+  "fields": {
+    "entryPrice": "Цена входа",
+    "stopLoss": "Стоп лосс",
+    "takeProfit": "Тейк-профит",
+    "stopPercent": "Отступ стопа",
+    "atrMultiplier": "Множитель ATR"
+  },
+  "stopMode": {
+    "numbers": "В цифрах",
+    "percent": "в %",
+    "atr": "ATR | {timeframe} | {multiplier}"
+  },
+  "direction": {
+    "long": "Long",
+    "short": "Short",
+    "buy": "Buy",
+    "sell": "Sell"
+  },
+  "results": {
+    "risk": "Риск",
+    "profit": "Профит",
+    "buyLabel": "Купить",
+    "cost": "Стоимость",
+    "margin": "Залог",
+    "leverage": "Кред.плечо",
+    "leverageValue": "{value}x",
+    "leverageForex": "плечо 1:{ratio}",
+    "liquidation": "Цена ликвидации",
+    "shares": "{count, plural, one {# акция} few {# акции} many {# акций} other {# акций}}",
+    "lots": "{count} лотов",
+    "perPip": "{value}/ пип",
+    "empty": "—"
+  },
+  "actions": {
+    "activate": "Активировать",
+    "activating": "Активируем…",
+    "activated": "Сделка активирована",
+    "share": "Скопировать ссылку на расчёт",
+    "copied": "Ссылка скопирована"
+  },
+  "settings": {
+    "title": "Параметры расчёта",
+    "deposit": "Депозит, USDT",
+    "riskPerTrade": "Риск на сделку, %",
+    "leverage": "Кредитное плечо",
+    "hint": "От депозита и риска на сделку зависит размер позиции."
+  },
+  "trades": {
+    "title": "Журнал сделок",
+    "status": {
+      "open": "В сделке",
+      "pending": "Ожидает",
+      "closed": "Завершён",
+      "canceled": "Отменён"
+    },
+    "empty": "Нет сделок в этом статусе"
+  },
+  "priceChange": "{value} %",
+  "errors": {
+    "required": "Заполните поле",
+    "positive": "Введите число больше нуля",
+    "stopEqualsEntry": "Стоп не может совпадать с ценой входа",
+    "stopAboveEntryLong": "Для лонга стоп должен быть ниже входа",
+    "stopBelowEntryShort": "Для шорта стоп должен быть выше входа"
+  },
+  "lang": {
+    "ru": "RU",
+    "en": "EN",
+    "switch": "Язык"
+  }
+}

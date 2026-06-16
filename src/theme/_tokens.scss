@@ -1,0 +1,26 @@
+// Brand tokens taken from the ProRiski Figma (Dev Mode inspect of the
+// calculator panel component). Single source of truth for the SCSS layer;
+// mirrored in `theme.ts` for MUI.
+
+$green: #329a85; // brand / profit / button
+$green-dark: #2b8472; // hover
+$red: #cb4a4a; // risk
+$amber: #e0922f; // liquidation notice
+
+$ink: #4a4a4a; // primary text
+$ink-strong: #3f3f3f; // values
+$title: #828282; // panel title
+$muted: #bdbdbd; // result labels, leverage
+$border: #f0f0f0; // field + panel border
+$border-hover: #d8d8d8;
+$field-bg: #fdfdfd;
+$surface: #fdfdfd;
+$page: #f4f5f6;
+$notice-bg: #fcf4e6;
+
+$radius: 6px; // inputs
+$radius-lg: 12px; // button
+$radius-panel: 16px;
+
+// Panel width matching the Figma frame.
+$panel-width: 312px;
